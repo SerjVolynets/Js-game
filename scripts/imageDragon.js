@@ -1,14 +1,17 @@
 var image = new Image();
+
 var timerId;
+
 function stInt (func) {
-     timerId = setInterval(func,100);
+     timerId = setInterval(func,70);
 }
 
 image.onload = function (){
      stInt(move);
-};
+}
 
 image.src = 'img/cuteDine.jpg';
+
 var x = 10;
 
 function move() {
